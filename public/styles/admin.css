@@ -1,0 +1,282 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+#contendor {    
+    margin: 0;
+
+    background: url(../img/fondoPrincipal.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 635px;
+
+}
+
+header {
+    background-color: darkmagenta;
+    
+    display: grid;
+    grid-template:
+    "nav search . icons" 50px /
+    30% 30% 10% 40%;
+
+}
+
+nav {
+    display: flex;
+}
+
+
+nav svg {
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+}
+
+nav h2 {
+   font-weight: bolder;
+   color: greenyellow;
+}
+
+
+#search  {
+    grid-area: search;
+
+    width: 60%;
+    height: 40px;
+    margin: auto;
+    
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+#icons {
+    grid-area: icons;
+    width: 280px;
+    display: flex;
+    margin-left: 50px;
+}
+
+#icons button {    
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid;
+    height: 40px;
+    width: 130px;
+    position: relative;
+    top: 5px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(245, 245, 245, 0.492);
+}
+
+#icons button:hover {
+    background-color: rgb(53, 47, 47);
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+.iconH {
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 10px; 
+    margin-right: 10px;
+}
+
+.iconH:hover {
+    transform: scale(1.2);
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+
+    width: 20%;
+    position: absolute;
+    left: 20px;
+    overflow: auto;
+    max-height: 535px;
+}
+
+aside h1 {
+    color: whitesmoke;
+    background-color: rgba(139, 0, 139, 0.671);
+    text-align: center;
+    width: 100%;
+}
+
+aside h4 {
+    color: whitesmoke;
+    background-color: rgba(199, 191, 199, 0.671);
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+#usersAdmin, #usersEstudiantes {
+
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+    color: whitesmoke;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconP {
+    border: solid 0.5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pUser {
+    width: 70%;
+    margin-left: 5px;
+
+}
+
+#contConsultas {
+    width: 76%;
+    grid-area: main;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    overflow: auto;
+
+    color: whitesmoke;
+
+    position: absolute;
+    right: 0;
+}
+
+#contConsultas h1 {
+    text-align: center;
+    background-color: rgba(139, 0, 139, 0.671);
+}
+
+#contConsultas button {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 18px;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid;
+    height: 40px;
+
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(245, 245, 245, 0.492);
+}
+
+#contConsultas button:hover {
+    background-color: rgb(53, 47, 47);
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+#contConsultas #cambiarConsultas2 {
+    display: none;
+}
+
+main {
+    width: 100%;
+    max-height: 450px;
+    /* overflow: hidden; */
+
+    grid-area: main;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.item {
+    position: relative;
+    width: 23%;
+    min-height: 120px;
+    border-radius: 10px;
+    
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+    word-wrap: break-word;
+}
+
+.pNombre {
+    color: black;
+}
+
+.pConsulta {
+    color: black;
+    width: 90%;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.imgDelete {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+}
+
+.imgEdit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+
+.footerItem {
+    background-color: rgba(139, 0, 139, 0.9);
+
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+}

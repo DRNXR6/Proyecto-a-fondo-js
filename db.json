@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": "f75f",
+      "rol": "admin",
+      "usuario": "Darien",
+      "contraseña": "123"
+    },
+    {
+      "id": "f86f",
+      "rol": "estudiante",
+      "usuario": "steven",
+      "contraseña": "123"
+    },
+    {
+      "id": "f65f",
+      "rol": "admin",
+      "usuario": "barry",
+      "contraseña": "2025"
+    },
+    {
+      "id": "f39f",
+      "rol": "estudiante",
+      "usuario": "Maria",
+      "contraseña": "25"
+    }
+  ],
+  "consults": [
+    {
+      "id": "eaf9",
+      "nombreUsuario": "steven",
+      "consulta": "ssd",
+      "fecha": "27/02/2025, 11:09"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "3333",
+      "fecha": "28/02/2025, 11:27",
+      "estado": "pendiente",
+      "id": "01ba"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "wwwww",
+      "fecha": "28/02/2025, 11:22",
+      "estado": "pendiente",
+      "id": "eee4"
+    },
+    {
+      "id": "d885",
+      "nombreUsuario": "Darien",
+      "consulta": "ccc",
+      "fecha": "27/02/2025, 15:15",
+      "estado": "pendiente"
+    },
+    {
+      "id": "1407",
+      "nombreUsuario": "steven",
+      "consulta": "sss",
+      "fecha": "27/02/2025, 15:17",
+      "estado": "pendiente"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "rrr",
+      "fecha": "28/02/2025, 11:26",
+      "estado": "atendida",
+      "id": "608e"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "444",
+      "fecha": "28/02/2025, 11:23",
+      "estado": "atendida",
+      "id": "a6d8"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "Hola profe",
+      "fecha": "28/02/2025, 11:22",
+      "estado": "atendida",
+      "id": "a5c3"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "Tengo una duda",
+      "fecha": "28/02/2025, 11:22",
+      "estado": "atendida",
+      "id": "5fa4"
+    },
+    {
+      "id": "66c7",
+      "nombreUsuario": "steven",
+      "consulta": "Hola Maria",
+      "fecha": "28/02/2025, 11:28",
+      "estado": "pendiente"
+    },
+    {
+      "id": "c5a8",
+      "nombreUsuario": "Maria",
+      "consulta": "Soy Maria",
+      "fecha": "28/02/2025, 11:29",
+      "estado": "pendiente"
+    },
+    {
+      "nombreUsuario": "Darien",
+      "consulta": "Jack",
+      "fecha": "28/02/2025, 11:35",
+      "estado": "pendiente",
+      "id": "4cd7"
+    }
+  ]
+}
