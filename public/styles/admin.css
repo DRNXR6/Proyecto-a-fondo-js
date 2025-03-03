@@ -190,7 +190,7 @@ aside h4 {
 #cambiarConsultas, #cambiarConsultas2 {
    
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 60px;
     border: solid;
     height: 40px;
@@ -213,14 +213,17 @@ aside h4 {
 
 main {
     width: 100%;
-    overflow: auto;  /* Permitir desplazamiento si es necesario */
+    overflow: auto; 
     border-radius: 10px;
     padding: 10px;
+    padding-bottom: 50px;
     margin: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    top: 50px;
 }
 
 .item {
@@ -232,11 +235,6 @@ main {
     margin: 5px;
     word-wrap: break-word;
 }
-
-/* .item:hover {
-    z-index: 2;
-    background-color: red;
-} */
 
 .pNombre {
     color: black;

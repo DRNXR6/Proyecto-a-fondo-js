@@ -35,6 +35,12 @@
       "rol": "estudiante",
       "usuario": "Darien Aguilar Quesada",
       "contraseña": "12"
+    },
+    {
+      "id": "54e4",
+      "rol": "estudiante",
+      "usuario": "Epson",
+      "contraseña": "123"
     }
   ],
   "consults": [
@@ -43,20 +49,6 @@
       "nombreUsuario": "steven",
       "consulta": "ssd",
       "fecha": "27/02/2025, 11:09"
-    },
-    {
-      "nombreUsuario": "Darien",
-      "consulta": "3333",
-      "fecha": "02/03/2025, 14:10",
-      "estado": "pendiente",
-      "id": "01ba"
-    },
-    {
-      "nombreUsuario": "Darien",
-      "consulta": "wwwww",
-      "fecha": "28/02/2025, 11:22",
-      "estado": "pendiente",
-      "id": "eee4"
     },
     {
       "nombreUsuario": "Darien",
@@ -136,21 +128,7 @@
       "id": "d931"
     },
     {
-      "id": "3e73",
-      "nombreUsuario": "steven",
-      "consulta": "dd",
-      "fecha": "01/03/2025, 17:04",
-      "estado": "pendiente"
-    },
-    {
       "id": "8e4b",
-      "nombreUsuario": "steven",
-      "consulta": "ddd",
-      "fecha": "01/03/2025, 17:05",
-      "estado": "pendiente"
-    },
-    {
-      "id": "2958",
       "nombreUsuario": "steven",
       "consulta": "ddd",
       "fecha": "01/03/2025, 17:05",
@@ -171,18 +149,11 @@
       "estado": "pendiente"
     },
     {
-      "id": "0350",
-      "nombreUsuario": "Darien Aguilar Quesada",
-      "consulta": "gggg",
-      "fecha": "02/03/2025, 14:18",
-      "estado": "pendiente"
-    },
-    {
-      "id": "d05a",
-      "nombreUsuario": "Darien Aguilar Quesada",
-      "consulta": "dhgfjgkhljñllgfzxfcvhbnmzdxfgvhbknlñlkhgjfdhhfjkllññjfgcvn mnjhuhjm bhvydghvn m",
-      "fecha": "02/03/2025, 14:18",
-      "estado": "pendiente"
+      "nombreUsuario": "Darien",
+      "consulta": "Hola profe",
+      "fecha": "03/03/2025, 09:54",
+      "estado": "atendida",
+      "id": "4531"
     }
   ]
 }
