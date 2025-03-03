@@ -141,8 +141,9 @@ cambiarConsultas.addEventListener("click", function () {
     }
 
     cambiarConsultas.style.display = "none";
+    
     cambiarConsultas2.style.display = "block";
-
+    search.value=""
     MConsultasAtendidas()
 
 });
@@ -154,6 +155,7 @@ cambiarConsultas2.addEventListener("click", function () {
     }
 
     cambiarConsultas.style.display = "block";
+    search.value=""
     cambiarConsultas2.style.display = "none";
 
     MConsultasPendientes()
@@ -300,8 +302,6 @@ async function MConsultasPendientes() {
                     estado = "atendida"
 
                     updateConsults(usuarioActual,element.consulta,fecha,estado,element.id)
-
-                    // deleteConsults(element.id)
 
                     Swal.fire({
                         title: "Consulta atendida",
@@ -513,6 +513,10 @@ async function participantes() {
         let element = datos[index].usuario;
         
         if(datos[index].rol === "admin") {
+
+            let divUsers = document.createElement("div")
+            divUsers.classList.add("divUsers")
+
             let divIconP = document.createElement("div")
             divIconP.classList.add("iconP")
             divIconP.textContent = element[0];
@@ -522,12 +526,17 @@ async function participantes() {
             pUser.textContent = element + " (Admin)"
             pUser.classList.add("pUser")
     
-            usersAdmin.appendChild(divIconP)
+            divUsers.appendChild(divIconP)
+            divUsers.appendChild(pUser)
     
-            usersAdmin.appendChild(pUser)
+            usersAdmin.appendChild(divUsers)
         }
 
         else {
+            
+            let divUsers = document.createElement("div")
+            divUsers.classList.add("divUsers")
+
             let divIconP = document.createElement("div")
             divIconP.classList.add("iconP")
             divIconP.textContent = element[0];
@@ -537,12 +546,15 @@ async function participantes() {
             pUser.textContent = element
             pUser.classList.add("pUser")
     
-            usersEstudiantes.appendChild(divIconP)
+            divUsers.appendChild(divIconP)
+            divUsers.appendChild(pUser)
     
-            usersEstudiantes.appendChild(pUser)
+            usersEstudiantes.appendChild(divUsers)
         }
     }
 }
+
+
 
 
 

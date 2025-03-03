@@ -2,76 +2,79 @@
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
-    
 }
 
-#contendor {    
+#contendor { 
+    position: relative;
     margin: 0;
-
     background: url(../img/fondoPrincipal.jpg);
-    background-size: 100% 100%;
     background-position: center;
-    height: 635px;
-
+    min-height: 635px;
+    background-size: cover;
 }
 
 header {
     background-color: darkmagenta;
-    
     display: grid;
     grid-template:
-    "nav search . icons" 50px /
-    30% 30% 10% 40%;
+    "nav search icons" 50px ;
+}
 
+#exit {
+    position: relative;
+    right: 10px;
+}
+
+#exit:hover {
+    transform: scale(1.2);
 }
 
 nav {
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 10px;
 }
-
 
 nav svg {
     cursor: pointer;
     position: relative;
-    top: 15px;
+    top: 2px;
 }
 
 nav h2 {
-   font-weight: bolder;
-   color: greenyellow;
+    font-weight: bolder;
+    color: greenyellow;
+    width: auto;
 }
-
 
 #search  {
     grid-area: search;
-
-    width: 60%;
+    width:80%;
     height: 40px;
     margin: auto;
-    
     border-radius: 10px;
     padding: 10px;
     background-color: transparent;
 }
 
-
 #icons {
-    grid-area: icons;
-    width: 280px;
     display: flex;
-    margin-left: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 #icons button {    
-    padding-left: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: solid;
     height: 40px;
     width: 130px;
-    position: relative;
-    top: 5px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(245, 245, 245, 0.492);
@@ -85,32 +88,23 @@ nav h2 {
 
 .iconH {
     cursor: pointer;
-
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     position: relative;
-    top: 10px; 
-    margin-right: 10px;
-}
-
-.iconH:hover {
-    transform: scale(1.2);
+    top: 2px; 
 }
 
 aside {
-    grid-area: aside;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
-
     width: 20%;
     position: absolute;
     left: 20px;
     overflow: auto;
     max-height: 535px;
 }
-
 aside h1 {
     color: whitesmoke;
     background-color: rgba(139, 0, 139, 0.671);
@@ -126,7 +120,10 @@ aside h4 {
     height: 40px;
 }
 
+
+
 #usersAdmin, #usersEstudiantes {
+
 
     overflow: hidden;
     margin: auto;
@@ -134,7 +131,8 @@ aside h4 {
     color: whitesmoke;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
 .iconP {
@@ -142,141 +140,423 @@ aside h4 {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .pUser {
-    width: 70%;
-    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    width: 150px;
+    position: relative;
+    left: 10px;
 
+}
+
+.divUsers {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.divUsers:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
 }
 
 #contConsultas {
     width: 76%;
-    grid-area: main;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
     overflow: auto;
-
     color: whitesmoke;
-
     position: absolute;
     right: 0;
+    max-height: 535px;
+
 }
 
 #contConsultas h1 {
     text-align: center;
     background-color: rgba(139, 0, 139, 0.671);
+    width: 100%;
+    margin-left: -10px;
 }
 
-#contConsultas button {
-    margin: 10px 0 0 10px;
-    padding: 10px;
-    background-color: transparent;
-    color: whitesmoke;
-    font-size: 18px;
-
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#cambiarConsultas, #cambiarConsultas2 {
+   
+    position: absolute;
+    top: 10px;
+    left: 60px;
     border: solid;
     height: 40px;
-
+    width: 130px;
+    margin: 50px 0;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(245, 245, 245, 0.492);
 }
 
-#contConsultas button:hover {
+#cambiarConsultas:hover, #cambiarConsultas2:hover {
     background-color: rgb(53, 47, 47);
     transform: scale(1.1);
     color: whitesmoke;
 }
 
-#contConsultas #cambiarConsultas2 {
+#cambiarConsultas2 {
     display: none;
 }
 
 main {
     width: 100%;
-    max-height: 450px;
-    /* overflow: hidden; */
-
-    grid-area: main;
+    overflow: auto;  /* Permitir desplazamiento si es necesario */
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .item {
     position: relative;
-    width: 23%;
+    width: 22%;
     min-height: 120px;
     border-radius: 10px;
-    
     padding: 10px;
     margin: 5px;
-    background-color: lightblue;
     word-wrap: break-word;
 }
 
+/* .item:hover {
+    z-index: 2;
+    background-color: red;
+} */
+
 .pNombre {
     color: black;
+    display: inline-block;
 }
 
 .pConsulta {
     color: black;
+    font-size: 20px;
     width: 90%;
     line-height: 25px;
     margin-bottom: 30px;
 }
 
-.imgDelete {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 70px;
-}
-
 .imgEdit {
     width: 30px;
     height: 30px;
-    position: absolute;
-    top: 10px;
-    right: 40px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+.imgDelete {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    left: 80px;
 }
 
 .check {
     width: 20px;
     height: 20px;
-    position: absolute;
-    top: 15px;
-    right: 10px;
+    position: relative;
+    left: 52px;
 }
-
 
 .footerItem {
     background-color: rgba(139, 0, 139, 0.9);
-
     font-weight: bold;
+    font-size: 20px;
     text-align: center;
     width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: whitesmoke;
     position: absolute;
     bottom: 0;
     left: 0;
     border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 1250px) and (min-width: 901px) {
+
+    .pNombre {
+        display: block;
+        width: auto;
+    }
+    .imgEdit {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: -20px;
+    }
+    
+    .imgDelete {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: 45px;
+    }
+    
+    .check {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 25px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    #contendor {
+        height: auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: auto;
+        margin: 10px auto;
+
+
+    }
+
+    nav svg {
+        position: relative;
+ 
+        top: 1px;
+        margin-right: 10px;
+    }
+
+    nav h2 {
+        overflow: hidden;
+    }
+
+    
+    #search {
+        width:40%;
+        margin: 10px auto;
+        margin-left: 30px;
+    }
+
+    #icons {
+        width:50%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+
+        justify-content: space-around;
+        margin: 5px auto 10px auto;
+    }
+
+    #icons button {
+        width: 80%;
+        font-size: 15px;
+        position: relative;
+        top: 0px;
+    }
+
+    aside {
+        width: 25%;
+        max-height: 500px;
+
+    }
+
+    #contConsultas {
+        width: 70%;
+        max-height: 500px;
+
+    }
+
+    main {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .item {
+        width: 30%;
+    }
+
+    .pNombre {
+        display: block;
+        width: auto;
+    }
+    .imgEdit {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: -30px;
+    }
+    
+    .imgDelete {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: 34px;
+    }
+    
+    .check {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 10px;
+    } 
+
+}
+
+
+@media (max-width: 600px) {
+    #contendor {
+        height: auto;
+        background-color: yellow;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    nav svg {
+        position: relative;
+        top: 1px;
+        margin-right: 10px;
+    }
+
+    nav h2 {
+        overflow: hidden;
+    }
+    #search {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    #icons {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0px 10px 20px 10px;
+    }
+
+    #icons button {
+        width: 150px;
+        font-size: 15px;
+    }
+
+
+
+    aside {
+        width: 92%;
+        position: relative;
+        height: 200px;
+
+    }
+
+    .divUsers {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        margin: 3px auto;
+        
+    }
+
+    #contConsultas {
+        width: 100%;
+        position: relative;
+        max-height: 500px;
+
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: auto;
+        padding: 0;
+    }
+    .item {
+        width: 95%;
+    }
+
+    .pNombre {
+        display: inline-block;
+        width: 60%;
+        margin-left: 0;
+    }
+    .imgEdit {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+    
+    .imgDelete {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        left: 80px;
+    }
+    
+    .check {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 60px;
+    }
+
+    #footerUsers {
+        font-size: 10px;
+    }
+
+    .pNombre {
+        font-size: 25px;
+    }
+    #pConsulta {
+        font-size: 20px;
+    }
+    .footerItem {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
